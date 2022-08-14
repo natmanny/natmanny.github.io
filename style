@@ -35,7 +35,7 @@ section li {
   list-style-type:none;
   background-color: peachpuff;
   padding: 8px 20px 8px 10px;
-  margin: 15px -13px 0 0;
+  margin: 20px -13px 0 0;
   cursor: pointer;
   justify-content: space-evenly;
 }
@@ -85,17 +85,12 @@ p {
   text-indent: 2em;
   color: lightsalmon;
 }
-a {
-  color: coral;
-  text-decoration: none;
-}
-a:hover{
-  color: lightseagreen;
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: inherit;
+ }
+h3 a{
   text-decoration: underline;
-}
-a:visited {
-  color: #4fc9ba;
-  text-decoration: none;
 }
 maintext{
   margin-top: 100px;
@@ -106,4 +101,16 @@ maintext{
 }
 .main li{
   color: lightsalmon;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: lightseagreen;
+}
+::-webkit-scrollbar-thumb {
+  background: teal;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #006e6e;
 }
